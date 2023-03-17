@@ -9,13 +9,88 @@ scr_Home As screen:
         Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
         ZIndex: =1
 
+    ctn_HeaderHomeShadow As ShadowBox:
+        Height: =ctn_HeaderHome.Height+32
+        Shadow: |-
+            ={OffsetX: 0, OffsetY: 0, Color: "#000000", Blur: 9, Opacity: 0.3}
+        Width: =ctn_HeaderHome.Width+32
+        X: =ctn_HeaderHome.X-16
+        Y: =ctn_HeaderHome.Y-16
+        ZIndex: =2
+
+    ctn_HeaderHome As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        Width: =Parent.Width
+        ZIndex: =3
+
+        lbl_AppName_1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            Font: =Font.'Segoe UI'
+            Height: =img_AppIcon.Height
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =Self.Height/1.85
+            Size: =14
+            Text: ="Transport Services"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.Width-Self.X
+            X: =img_AppIcon.X+img_AppIcon.Width
+            Y: =img_AppIcon.Y
+            ZIndex: =1
+
+        img_AppIcon As image:
+            Height: =Parent.Height
+            Image: =BidsBlockIcon
+            PaddingBottom: =Self.PaddingTop
+            PaddingLeft: =Self.PaddingTop
+            PaddingRight: =Self.PaddingTop
+            PaddingTop: =Self.Width/5
+            Width: =Self.Height
+            X: =ico_Menu.X+ico_Menu.Width
+            ZIndex: =2
+
+        "ico_Menu As icon.'3DPrinting'":
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(51, 51, 51, 1)
+            FocusedBorderColor: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =Parent.Height
+            HoverFill: =RGBA(0, 0, 0, 0.05)
+            Icon: =If(var_Menu, Icon.Cancel, Icon.Hamburger)
+            OnSelect: =Set(var_Menu, !var_Menu)
+            PaddingBottom: =Self.PaddingTop
+            PaddingLeft: =Self.PaddingTop
+            PaddingRight: =Self.PaddingTop
+            PaddingTop: =Self.Width/3
+            Width: =Self.Height
+            ZIndex: =3
+
+        lbl_AppName As label:
+            Color: =RGBA(51, 51, 51, 1)
+            Font: =Font.'Lato Black'
+            Height: =img_AppIcon.Height
+            PaddingBottom: =Self.Height/2.5
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =20
+            Text: =Upper("BidsBlock")
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =Parent.Width-Self.X
+            X: =img_AppIcon.X+img_AppIcon.Width
+            Y: =img_AppIcon.Y
+            ZIndex: =4
+
     ctn_Menu As groupContainer.manualLayoutContainer:
         Height: =Parent.Height-Self.Y
         Visible: =var_Menu
         Width: =Parent.Width
         X: =ctn_HeaderHome.X
         Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
-        ZIndex: =2
+        ZIndex: =4
 
         shp_ExitMenu As rectangle:
             Fill: =RGBA(0, 0, 0, 0.5)
@@ -146,79 +221,4 @@ scr_Home As screen:
                 X: =ctn_Driver.X
                 Y: =ctn_Driver.Y+ctn_Driver.Height
                 ZIndex: =2
-
-    ctn_HeaderHomeShadow As ShadowBox:
-        Height: =ctn_HeaderHome.Height+32
-        Shadow: |-
-            ={OffsetX: 0, OffsetY: 0, Color: "#000000", Blur: 9, Opacity: 0.3}
-        Width: =ctn_HeaderHome.Width+32
-        X: =ctn_HeaderHome.X-16
-        Y: =ctn_HeaderHome.Y-16
-        ZIndex: =3
-
-    ctn_HeaderHome As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =80
-        Width: =Parent.Width
-        ZIndex: =4
-
-        lbl_AppName_1 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            Font: =Font.'Segoe UI'
-            Height: =img_AppIcon.Height
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =Self.Height/1.85
-            Size: =14
-            Text: ="Transport Services"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.Width-Self.X
-            X: =img_AppIcon.X+img_AppIcon.Width
-            Y: =img_AppIcon.Y
-            ZIndex: =1
-
-        img_AppIcon As image:
-            Height: =Parent.Height
-            Image: =BidsBlockIcon
-            PaddingBottom: =Self.PaddingTop
-            PaddingLeft: =Self.PaddingTop
-            PaddingRight: =Self.PaddingTop
-            PaddingTop: =Self.Width/5
-            Width: =Self.Height
-            X: =ico_Menu.X+ico_Menu.Width
-            ZIndex: =2
-
-        "ico_Menu As icon.'3DPrinting'":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(51, 51, 51, 1)
-            FocusedBorderColor: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =0
-            Height: =Parent.Height
-            HoverFill: =RGBA(0, 0, 0, 0.05)
-            Icon: =If(var_Menu, Icon.Cancel, Icon.Hamburger)
-            OnSelect: =Set(var_Menu, !var_Menu)
-            PaddingBottom: =Self.PaddingTop
-            PaddingLeft: =Self.PaddingTop
-            PaddingRight: =Self.PaddingTop
-            PaddingTop: =Self.Width/3
-            Width: =Self.Height
-            ZIndex: =3
-
-        lbl_AppName As label:
-            Color: =RGBA(51, 51, 51, 1)
-            Font: =Font.'Lato Black'
-            Height: =img_AppIcon.Height
-            PaddingBottom: =Self.Height/2.5
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =20
-            Text: =Upper("BidsBlock")
-            VerticalAlign: =VerticalAlign.Bottom
-            Width: =Parent.Width-Self.X
-            X: =img_AppIcon.X+img_AppIcon.Width
-            Y: =img_AppIcon.Y
-            ZIndex: =4
 
