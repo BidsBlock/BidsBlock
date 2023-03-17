@@ -128,36 +128,6 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.BidsBlockIcon"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.BidsBlockIcon",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BidsBlockIcon",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 0
         }
       ],
       "tool": {

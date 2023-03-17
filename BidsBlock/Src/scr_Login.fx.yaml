@@ -15,6 +15,16 @@ scr_Login As screen:
         Width: =Parent.Width
         ZIndex: =2
 
+        Image1 As image:
+            Height: =Parent.Height
+            Image: =BidsBlockIcon
+            PaddingBottom: =Self.PaddingTop
+            PaddingLeft: =Self.PaddingTop
+            PaddingRight: =Self.PaddingTop
+            PaddingTop: =Self.Width/5
+            Width: =Self.Height
+            ZIndex: =1
+
     ctn_Main As groupContainer.manualLayoutContainer:
         Height: =Parent.Height-Self.Y
         Width: =Parent.Width
