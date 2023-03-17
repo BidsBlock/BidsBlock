@@ -148,7 +148,8 @@ scr_Home As screen:
 
                 lbl_DriverFullname As label:
                     Color: =RGBA(51, 51, 51, 1)
-                    Font: =Font.'Lato Black'
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =img_DriverIcon.Height
                     PaddingBottom: =0
                     PaddingLeft: =img_DriverIcon.PaddingLeft
@@ -197,15 +198,14 @@ scr_Home As screen:
 
                 img_DriverCardHover As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
                     BorderThickness: =1
                     Height: =Parent.Height-Self.Y*2
-                    HoverBorderColor: =RGBA(149, 149, 149, 1)
+                    HoverBorderColor: =RGBA(77, 77, 77, 1)
                     HoverFill: =RGBA(0, 0, 0, 0.05)
                     Image: =
                     PaddingLeft: =Self.Width/3
                     PaddingTop: =Self.Width/3
-                    PressedBorderColor: =RGBA(149, 149, 149, 1)
+                    PressedBorderColor: =RGBA(77, 77, 77, 1)
                     PressedFill: =RGBA(0, 0, 0, 0.08)
                     RadiusBottomLeft: =Self.X
                     RadiusBottomRight: =Self.X
