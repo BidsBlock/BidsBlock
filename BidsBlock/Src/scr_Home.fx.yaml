@@ -16,6 +16,22 @@ scr_Home As screen:
         Width: =Parent.Width
         ZIndex: =2
 
+        lbl_AppName_1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            Font: =Font.'Segoe UI'
+            Height: =img_AppIcon.Height
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =Self.Height/1.85
+            Size: =14
+            Text: ="Transport Services"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.Width-Self.X
+            X: =img_AppIcon.X+img_AppIcon.Width
+            Y: =img_AppIcon.Y
+            ZIndex: =1
+
         img_AppIcon As image:
             Height: =Parent.Height
             Image: =BidsBlockIcon
@@ -25,7 +41,7 @@ scr_Home As screen:
             PaddingTop: =Self.Width/5
             Width: =Self.Height
             X: =ico_Menu.X+ico_Menu.Width
-            ZIndex: =1
+            ZIndex: =2
 
         "ico_Menu As icon.'3DPrinting'":
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -42,7 +58,7 @@ scr_Home As screen:
             PaddingRight: =Self.PaddingTop
             PaddingTop: =Self.Width/3
             Width: =Self.Height
-            ZIndex: =2
+            ZIndex: =3
 
         lbl_AppName As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -53,24 +69,8 @@ scr_Home As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =20
-            Text: ="BidsBlock"
+            Text: =Upper("BidsBlock")
             VerticalAlign: =VerticalAlign.Bottom
-            Width: =Parent.Width-Self.X
-            X: =img_AppIcon.X+img_AppIcon.Width
-            Y: =img_AppIcon.Y
-            ZIndex: =3
-
-        lbl_AppName_1 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            Font: =Font.'Segoe UI'
-            Height: =img_AppIcon.Height
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =Self.Height/1.85
-            Size: =14
-            Text: ="Transport Services"
-            VerticalAlign: =VerticalAlign.Top
             Width: =Parent.Width-Self.X
             X: =img_AppIcon.X+img_AppIcon.Width
             Y: =img_AppIcon.Y
