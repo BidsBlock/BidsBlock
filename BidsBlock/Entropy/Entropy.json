@@ -1,22 +1,30 @@
 {
   "ComponentIndexes": {
     "ctn_HeaderShadow": 1,
-    "ShadowBox": 1
+    "ctn_HeaderShadow_1": 1,
+    "ShadowBox": 2
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
     "ctn_Header": 7,
+    "ctn_Header_1": 18,
     "ctn_HeaderShadow": 6,
+    "ctn_HeaderShadow_1": 17,
     "ctn_Main": 8,
+    "ctn_Main_1": 20,
+    "ico_Menu": 21,
     "Image1": 9,
+    "img_AppIcon": 19,
     "imgShadowBox_SB": 4,
+    "lbl_AppName": 22,
+    "scr_Home": 16,
     "scr_Login": 5,
     "ShadowBox": 3
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/17/2023 15:47:23",
+  "HeaderLastSavedDateTimeUTC": "03/17/2023 15:52:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "71e52f11-32f6-4e6f-b6ed-2cff9b68975f": "\"/providers/microsoft.powerapps/apis/shared_sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9/connections/c4e240bdb1834e65b1acf9c02d484ab3\""
@@ -70,26 +78,42 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "groupContainer": 1,
-    "image": 0
+    "icon": 3,
+    "image": 0,
+    "label": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
     "ctn_Header": {},
+    "ctn_Header_1": {},
     "ctn_HeaderShadow": {},
+    "ctn_HeaderShadow_1": {},
     "ctn_Main": {},
+    "ctn_Main_1": {},
+    "ico_Menu": {},
     "Image1": {},
+    "img_AppIcon": {},
     "imgShadowBox_SB": {},
+    "lbl_AppName": {},
+    "scr_Home": {},
     "scr_Login": {},
     "ShadowBox": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "ctn_Header": 1,
-    "ctn_HeaderShadow": 0,
-    "ctn_Main": 3,
-    "Image1": 2,
-    "imgShadowBox_SB": 4,
+    "ctn_Header": 6,
+    "ctn_Header_1": 1,
+    "ctn_HeaderShadow": 5,
+    "ctn_HeaderShadow_1": 0,
+    "ctn_Main": 8,
+    "ctn_Main_1": 4,
+    "ico_Menu": 2,
+    "Image1": 7,
+    "img_AppIcon": 3,
+    "imgShadowBox_SB": 9,
+    "lbl_AppName": 0,
+    "scr_Home": 0,
     "scr_Login": 0,
     "ShadowBox": 0
   },
@@ -106,11 +130,11 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0700304,
     "ControlCount": {
-      "f5d17746d15640748205ea66a1093331": 2,
-      "groupContainer": 2,
-      "image": 2,
+      "f5d17746d15640748205ea66a1093331": 3,
+      "groupContainer": 4,
+      "image": 3,
       "label": 1,
-      "screen": 1
+      "screen": 2
     },
     "DeserializationLoadTime": 1.4106235,
     "ErrorCount": 0

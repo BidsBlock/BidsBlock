@@ -117,6 +117,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "scr_Home",
     "scr_Login"
   ]
 }
