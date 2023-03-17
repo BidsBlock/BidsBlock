@@ -100,7 +100,6 @@ scr_Home As screen:
             ZIndex: =1
 
         ctn_MenuMain As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(0, 0, 0, 1)
             Height: =Parent.Height
             Width: =Parent.Width-ctn_HeaderHome.Height*2
             ZIndex: =2
