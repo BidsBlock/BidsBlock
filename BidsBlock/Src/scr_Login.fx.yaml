@@ -1,16 +1,24 @@
 scr_Login As screen:
     Fill: =RGBA(237, 237, 237, 1)
 
+    ctn_HeaderShadow As ShadowBox:
+        Height: =ctn_Header.Height+32
+        Shadow: |-
+            ={OffsetX: 0, OffsetY: 0, Color: "#000000", Blur: 9, Opacity: 0.3}
+        Width: =ctn_Header.Width+32
+        X: =ctn_Header.X-16
+        Y: =ctn_Header.Y-16
+
     ctn_Header As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =80
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =2
 
     ctn_Main As groupContainer.manualLayoutContainer:
         Height: =Parent.Height-Self.Y
         Width: =Parent.Width
         X: =ctn_Header.X
         Y: =ctn_Header.Y+ctn_Header.Height
-        ZIndex: =2
+        ZIndex: =3
 
