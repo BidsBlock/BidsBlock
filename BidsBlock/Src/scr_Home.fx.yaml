@@ -25,16 +25,33 @@ scr_Home As screen:
             ZIndex: =1
 
         ctn_MenuMain As groupContainer.manualLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 0, 0, 1)
             Height: =Parent.Height
             Width: =Parent.Width-ctn_HeaderHome.Height*2
             ZIndex: =2
 
             ctn_Driver As groupContainer.manualLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255, 255, 255, 0.68)
                 Height: =Parent.Height*.2
                 Width: =Parent.Width
                 ZIndex: =1
+
+                img_DriverIcon_1 As image:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height-Self.Y*2
+                    Image: =
+                    PaddingLeft: =Self.Width/3
+                    PaddingTop: =Self.Width/3
+                    RadiusBottomLeft: =Self.X
+                    RadiusBottomRight: =Self.X
+                    RadiusTopLeft: =Self.X
+                    RadiusTopRight: =Self.X
+                    Width: =Parent.Width-Self.X*2
+                    X: =img_DriverIcon.X
+                    Y: =img_DriverIcon.Y
+                    ZIndex: =1
 
                 img_DriverIcon As image:
                     Height: =(Parent.Height-Self.X*2)/3
@@ -44,7 +61,7 @@ scr_Home As screen:
                     Width: =Self.Height
                     X: =16
                     Y: =16
-                    ZIndex: =1
+                    ZIndex: =2
 
                 lbl_DriverFullname As label:
                     Color: =RGBA(51, 51, 51, 1)
@@ -55,43 +72,45 @@ scr_Home As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =20
-                    Text: =User().FullName
+                    Text: =Upper(User().FullName)
                     VerticalAlign: =VerticalAlign.Bottom
                     Width: =Parent.Width-Self.X-img_DriverIcon.X
                     X: =img_DriverIcon.X+img_DriverIcon.Width
                     Y: =img_DriverIcon.Y
-                    ZIndex: =2
+                    ZIndex: =3
 
                 lbl_DriverEmail As label:
                     Color: =RGBA(51, 51, 51, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =img_DriverIcon.Height
                     PaddingBottom: =0
                     PaddingLeft: =img_DriverIcon.PaddingLeft
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =14
-                    Text: =User().Email
+                    Size: =10
+                    Text: =Upper(User().Email)
                     Width: =Parent.Width-Self.X-img_DriverIcon.X
                     X: =lbl_DriverFullname.X
                     Y: =lbl_DriverFullname.Y+lbl_DriverFullname.Height
-                    ZIndex: =3
+                    ZIndex: =4
 
                 lbl_DriverType As label:
                     Color: =RGBA(51, 51, 51, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =img_DriverIcon.Height
                     PaddingBottom: =0
                     PaddingLeft: =img_DriverIcon.PaddingLeft
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =14
-                    Text: ="Driver"
+                    Size: =10
+                    Text: =Upper("Driver")
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.Width-Self.X-img_DriverIcon.X
                     X: =lbl_DriverEmail.X
                     Y: =lbl_DriverEmail.Y+lbl_DriverEmail.Height
-                    ZIndex: =4
+                    ZIndex: =5
 
             ctn_MenuItems As groupContainer.manualLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
