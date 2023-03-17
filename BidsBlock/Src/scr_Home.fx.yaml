@@ -31,7 +31,7 @@ scr_Home As screen:
             ZIndex: =2
 
             ctn_Driver As groupContainer.manualLayoutContainer:
-                Fill: =RGBA(255, 255, 255, 0.88)
+                Fill: =RGBA(255, 255, 255, 0.96)
                 Height: =Parent.Height*.2
                 Width: =Parent.Width
                 ZIndex: =1
@@ -124,7 +124,6 @@ scr_Home As screen:
                 img_DriverCardHover As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
-                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =Parent.Height-Self.Y*2
                     HoverFill: =RGBA(0, 0, 0, 0.05)
                     Image: =
