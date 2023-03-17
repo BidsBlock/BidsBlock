@@ -129,7 +129,7 @@ scr_Home As screen:
                     Image: =
                     PaddingLeft: =Self.Width/3
                     PaddingTop: =Self.Width/3
-                    PressedFill: =RGBA(0, 0, 0, 1)
+                    PressedFill: =RGBA(0, 0, 0, 0.08)
                     RadiusBottomLeft: =Self.X
                     RadiusBottomRight: =Self.X
                     RadiusTopLeft: =Self.X
