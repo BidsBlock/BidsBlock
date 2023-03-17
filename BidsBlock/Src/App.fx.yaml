@@ -1,3 +1,32 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =// Setting up App Collections
+        ClearCollect(
+            col_MainNavigation,
+            {
+                ID:1,
+                LABEL:"Select Driver",
+                ICON:ico_driver,
+                ACTIVE:true
+            },
+            {
+                ID:2,
+                LABEL:"Trips",
+                ICON:ico_trip,
+                ACTIVE:true
+            },
+            {
+                ID:3,
+                LABEL:"Expenses",
+                ICON:ico_expense,
+                ACTIVE:true
+            },
+            {
+                ID:4,
+                LABEL:"Accounting",
+                ICON:ico_accounting,
+                ACTIVE:true
+            }
+        )
 
