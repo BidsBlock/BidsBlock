@@ -1,0 +1,39 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Defaulttitle" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Default title">Hashes a string with the function SHA-256 through an open API</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="sha256_responses_default_def_Digest_def" />
+      <string name="sha256_responses_default_def_DigestEnc_def" />
+      <string name="sha256_responses_default_def_Type_def" />
+      <string name="sha256_responses_default_def_Key_def" />
+      <object name="sha256_responses_default_def">
+        <property name="Digest" type="string" />
+        <property name="DigestEnc" type="string" />
+        <property name="Type" type="string" />
+        <property name="Key" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9">
+    <resource path="/{connectionId}/hash/sha256/hex">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="sha256" actionName="sha256" siena:isDeprecated="false">
+        <doc title="hash a string from powerapps value&#xA;this connection uses a string entered in powerapps and hashes it using sha256 method and returns the digest" />
+        <request>
+          <param style="query" name="value" type="xs:string" required="true" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:sha256_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

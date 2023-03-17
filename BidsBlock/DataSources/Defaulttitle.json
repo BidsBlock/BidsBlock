@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9",
+    "Name": "Defaulttitle",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

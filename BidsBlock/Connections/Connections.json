@@ -1,1 +1,19 @@
-{}
+{
+  "71e52f11-32f6-4e6f-b6ed-2cff9b68975f": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "sha256",
+      "iconUri": "https://prodapiicons.cdn.powerappscdn.net/20220716t000000z1a2e3a12bf364287a2e76881c381a8db/customconnectoricon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Defaulttitle"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "71e52f11-32f6-4e6f-b6ed-2cff9b68975f"
+  }
+}
