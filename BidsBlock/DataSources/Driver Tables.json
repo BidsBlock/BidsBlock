@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ah_drivertable",
+    "MaxGetRowsCount": 2000,
     "Name": "Driver Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -49,6 +50,7 @@
       "ah_firstname": "FirstName",
       "ah_lastname": "LastName",
       "ah_licenseplate": "LicensePlate",
+      "ah_password": "Password",
       "ah_phonenumber": "PhoneNumber",
       "ah_vatnumber": "VATNumber",
       "createdby": "Created By",

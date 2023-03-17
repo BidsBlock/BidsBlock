@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ah_accountingtable",
+    "MaxGetRowsCount": 2000,
     "Name": "Accounting Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

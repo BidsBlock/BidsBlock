@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ah_tripstable",
+    "MaxGetRowsCount": 2000,
     "Name": "Trips Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

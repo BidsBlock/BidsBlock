@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ah_expensetable",
+    "MaxGetRowsCount": 2000,
     "Name": "Expense Tables",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
