@@ -70,7 +70,7 @@
       "parallelcodegen": false,
       "pdffunction": true,
       "projectionmapping": true,
-      "reactformulabar": true,
+      "reactformulabar": false,
       "reliableconcurrent": true,
       "reverttooldpowerautomate": false,
       "rtlinstudiopreview": false,
