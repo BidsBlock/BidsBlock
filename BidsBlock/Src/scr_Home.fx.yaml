@@ -155,7 +155,7 @@ scr_Home As screen:
                     PaddingLeft: =img_DriverIcon.PaddingLeft
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =20
+                    Size: =18
                     Text: =Upper(User().FullName)
                     VerticalAlign: =VerticalAlign.Bottom
                     Width: =Parent.Width-Self.X-img_DriverIcon.X
