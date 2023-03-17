@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.TabIndex"
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.TabIndex",
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "scr_Home",
-                "type": "scr_Home.ctn_Header_1.ico_Menu"
+                "type": "scr_Home.ctn_HeaderHome.ico_Menu"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.AccessibleLabel"
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.AccessibleLabel",
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "scr_Home",
-                "type": "scr_Home.ctn_Header_1.ico_Menu"
+                "type": "scr_Home.ctn_HeaderHome.ico_Menu"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.FocusedBorderThickness"
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "scr_Home.ctn_Header_1.ico_Menu.FocusedBorderThickness",
+                  "fullyQualifiedName": "scr_Home.ctn_HeaderHome.ico_Menu.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "scr_Home",
-                "type": "scr_Home.ctn_Header_1.ico_Menu"
+                "type": "scr_Home.ctn_HeaderHome.ico_Menu"
               }
             }
           ],

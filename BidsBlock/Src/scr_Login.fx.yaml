@@ -1,21 +1,21 @@
 scr_Login As screen:
     Fill: =RGBA(237, 237, 237, 1)
 
-    ctn_HeaderShadow As ShadowBox:
-        Height: =ctn_Header.Height+32
+    ctn_HeaderLoginShadow As ShadowBox:
+        Height: =ctn_HeaderLogin.Height+32
         Shadow: |-
             ={OffsetX: 0, OffsetY: 0, Color: "#000000", Blur: 9, Opacity: 0.3}
-        Width: =ctn_Header.Width+32
-        X: =ctn_Header.X-16
-        Y: =ctn_Header.Y-16
+        Width: =ctn_HeaderLogin.Width+32
+        X: =ctn_HeaderLogin.X-16
+        Y: =ctn_HeaderLogin.Y-16
 
-    ctn_Header As groupContainer.manualLayoutContainer:
+    ctn_HeaderLogin As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =80
         Width: =Parent.Width
         ZIndex: =2
 
-        Image1 As image:
+        img_AppIconLogin As image:
             Height: =Parent.Height
             Image: =BidsBlockIcon
             PaddingBottom: =Self.PaddingTop
@@ -25,10 +25,10 @@ scr_Login As screen:
             Width: =Self.Height
             ZIndex: =1
 
-    ctn_Main As groupContainer.manualLayoutContainer:
+    ctn_MainLogin As groupContainer.manualLayoutContainer:
         Height: =Parent.Height-Self.Y
         Width: =Parent.Width
-        X: =ctn_Header.X
-        Y: =ctn_Header.Y+ctn_Header.Height
+        X: =ctn_HeaderLogin.X
+        Y: =ctn_HeaderLogin.Y+ctn_HeaderLogin.Height
         ZIndex: =3
 
