@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ah_drivertables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ah_drivertable",
+    "Name": "Driver Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "ah_ah_accountingtable_DriverID_ah_drivertabl": "Accounting Tables",
+      "ah_ah_expensetable_DriverID_ah_drivertable": "Expense Tables",
+      "ah_ah_tripstable_DriverID_ah_drivertable": "Trips Tables",
+      "ah_bankaccount": "BankAccount",
+      "ah_carcolor": "CarColor",
+      "ah_carmake": "CarMake",
+      "ah_carmodel": "CarModel",
+      "ah_caryear": "CarYear",
+      "ah_companynumber": "CompanyNumber",
+      "ah_driverid": "DriverID",
+      "ah_drivertable_ActivityPointers": "Activities",
+      "ah_drivertable_Annotations": "Notes",
+      "ah_drivertable_Appointments": "Appointments",
+      "ah_drivertable_AsyncOperations": "System Jobs",
+      "ah_drivertable_BulkDeleteFailures": "Bulk Delete Failures",
+      "ah_drivertable_chats": "Teams chats",
+      "ah_drivertable_connections1": "Connections (ah_drivertable_connections1)",
+      "ah_drivertable_connections2": "Connections (ah_drivertable_connections2)",
+      "ah_drivertable_DuplicateBaseRecord": "Duplicate Records (ah_drivertable_DuplicateBaseRecord)",
+      "ah_drivertable_DuplicateMatchingRecord": "Duplicate Records (ah_drivertable_DuplicateMatchingRecord)",
+      "ah_drivertable_Emails": "Email Messages",
+      "ah_drivertable_Faxes": "Faxes",
+      "ah_drivertable_Feedback": "Feedback",
+      "ah_drivertable_Letters": "Letters",
+      "ah_drivertable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ah_drivertable_PhoneCalls": "Phone Calls",
+      "ah_drivertable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ah_drivertable_ProcessSession": "Process Sessions",
+      "ah_drivertable_QueueItems": "Queue Items",
+      "ah_drivertable_RecurringAppointmentMasters": "Recurring Appointments",
+      "ah_drivertable_SharePointDocumentLocations": "Document Locations",
+      "ah_drivertable_SyncErrors": "Sync Errors",
+      "ah_drivertable_Tasks": "Tasks",
+      "ah_drivertable_Teams": "Teams",
+      "ah_drivertableid": "Driver Table",
+      "ah_email": "Email",
+      "ah_firstname": "FirstName",
+      "ah_lastname": "LastName",
+      "ah_licenseplate": "LicensePlate",
+      "ah_phonenumber": "PhoneNumber",
+      "ah_vatnumber": "VATNumber",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "emailaddress": "Email Address",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Driver Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Driver Tables (Views)",
+    "Name": "_ah_drivertable_views",
+    "RelatedEntityName": "Driver Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3e45e40b-a9c7-4c7f-9979-fd4a8b976545": "Driver Table Lookup View",
+      "6ec42c00-4a10-475b-9086-71881b0d0adc": "Driver Table Associated View",
+      "744ed7ae-c315-4f04-a5af-4aa6c253bad0": "Driver Table Advanced Find View",
+      "7ece4011-63f0-4bf7-aecf-757dc607b636": "Inactive Driver Tables",
+      "d8a048c9-5d1b-450d-b97d-24160125c41e": "Active Driver Tables"
+    }
+  },
+  {
+    "DisplayName": "Status (Driver Tables)",
+    "Name": "ah_drivertable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Driver Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Driver Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Driver Tables)",
+    "Name": "ah_drivertable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Driver Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Driver Tables",
+    "Type": "OptionSetInfo"
+  }
+]

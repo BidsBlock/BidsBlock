@@ -1,0 +1,32 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_ah_accountingtable_forms",
+      "Namespace": "Accounting Tables (Forms)",
+      "Values": {
+        "Information": "efd7d3bd-9171-4d73-8160-be30d95b30a4"
+      }
+    },
+    {
+      "Kind": "default.cds_ah_tripstable_forms",
+      "Namespace": "Trips Tables (Forms)",
+      "Values": {
+        "Information": "88f71544-31d7-42eb-a317-b6030a427bb2"
+      }
+    },
+    {
+      "Kind": "default.cds_ah_drivertable_forms",
+      "Namespace": "Driver Tables (Forms)",
+      "Values": {
+        "Information": "6d81d5a4-896d-42f4-9136-c8f65a3890f9"
+      }
+    },
+    {
+      "Kind": "default.cds_ah_expensetable_forms",
+      "Namespace": "Expense Tables (Forms)",
+      "Values": {
+        "Information": "ed14f896-27ea-4a99-a171-f77dceb9a4bd"
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ah_expensetables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ah_expensetable",
+    "Name": "Expense Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "ah_amount": "Amount",
+      "ah_amount_base": "Amount (Base)",
+      "ah_description": "Description",
+      "ah_DriverID": "DriverID",
+      "ah_expensedate": "ExpenseDate",
+      "ah_expenseid": "ExpenseID",
+      "ah_expensetable_ActivityPointers": "Activities",
+      "ah_expensetable_Annotations": "Notes",
+      "ah_expensetable_Appointments": "Appointments",
+      "ah_expensetable_AsyncOperations": "System Jobs",
+      "ah_expensetable_BulkDeleteFailures": "Bulk Delete Failures",
+      "ah_expensetable_chats": "Teams chats",
+      "ah_expensetable_connections1": "Connections (ah_expensetable_connections1)",
+      "ah_expensetable_connections2": "Connections (ah_expensetable_connections2)",
+      "ah_expensetable_DuplicateBaseRecord": "Duplicate Records (ah_expensetable_DuplicateBaseRecord)",
+      "ah_expensetable_DuplicateMatchingRecord": "Duplicate Records (ah_expensetable_DuplicateMatchingRecord)",
+      "ah_expensetable_Emails": "Email Messages",
+      "ah_expensetable_Faxes": "Faxes",
+      "ah_expensetable_Feedback": "Feedback",
+      "ah_expensetable_Letters": "Letters",
+      "ah_expensetable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ah_expensetable_PhoneCalls": "Phone Calls",
+      "ah_expensetable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ah_expensetable_ProcessSession": "Process Sessions",
+      "ah_expensetable_QueueItems": "Queue Items",
+      "ah_expensetable_RecurringAppointmentMasters": "Recurring Appointments",
+      "ah_expensetable_SharePointDocumentLocations": "Document Locations",
+      "ah_expensetable_SyncErrors": "Sync Errors",
+      "ah_expensetable_Tasks": "Tasks",
+      "ah_expensetable_Teams": "Teams",
+      "ah_expensetableid": "Expense Table",
+      "ah_expensetype": "ExpenseType",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "emailaddress": "Email Address",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Expense Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Expense Tables (Views)",
+    "Name": "_ah_expensetable_views",
+    "RelatedEntityName": "Expense Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "455e2427-8e40-4f4f-80b3-93ed8d3569df": "Inactive Expense Tables",
+      "992c4c8b-86ad-4f83-905b-ca975fe8a407": "Expense Table Lookup View",
+      "bdc25492-9db9-4da4-8e04-10d1293824a4": "Expense Table Advanced Find View",
+      "d1842543-e7a1-4836-8a43-7493642598c4": "Active Expense Tables",
+      "fe41e9de-78af-498b-bf15-78c2e5c5b889": "Expense Table Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Expense Tables)",
+    "Name": "ah_expensetable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Expense Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Expense Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Expense Tables)",
+    "Name": "ah_expensetable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Expense Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Expense Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ExpenseType",
+    "Name": "ah_expensetype",
+    "OptionSetInfoNameMapping": {
+      "1": "Fuel",
+      "2": "Maintenance",
+      "3": "Insurance",
+      "4": "Carwash",
+      "5": "Food",
+      "6": "Equipment",
+      "7": "Parking Ticket",
+      "8": "Toll Fee",
+      "9": "Airport Fees"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ah_expensetype",
+        "OptionSetReferenceEntityName": "Expense Tables"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "ah_expensetype",
+    "RelatedEntityName": "Expense Tables",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,129 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ah_tripstables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ah_tripstable",
+    "Name": "Trips Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "ah_ah_accountingtable_TripID_ah_tripstable": "Accounting Tables",
+      "ah_destination": "Destination",
+      "ah_distance": "Distance",
+      "ah_DriverID": "DriverID",
+      "ah_enddatetime": "EndDateTime",
+      "ah_expenses": "Expenses",
+      "ah_expenses_base": "Expenses (Base)",
+      "ah_fare": "Fare",
+      "ah_fare_base": "Fare (Base)",
+      "ah_name": "TripID",
+      "ah_netearnings": "NetEarnings",
+      "ah_netearnings_base": "NetEarnings (Base)",
+      "ah_pickuplocation": "PickupLocation",
+      "ah_startdatetime": "StartDateTime",
+      "ah_tripstable_ActivityPointers": "Activities",
+      "ah_tripstable_Annotations": "Notes",
+      "ah_tripstable_Appointments": "Appointments",
+      "ah_tripstable_AsyncOperations": "System Jobs",
+      "ah_tripstable_BulkDeleteFailures": "Bulk Delete Failures",
+      "ah_tripstable_chats": "Teams chats",
+      "ah_tripstable_connections1": "Connections (ah_tripstable_connections1)",
+      "ah_tripstable_connections2": "Connections (ah_tripstable_connections2)",
+      "ah_tripstable_DuplicateBaseRecord": "Duplicate Records (ah_tripstable_DuplicateBaseRecord)",
+      "ah_tripstable_DuplicateMatchingRecord": "Duplicate Records (ah_tripstable_DuplicateMatchingRecord)",
+      "ah_tripstable_Emails": "Email Messages",
+      "ah_tripstable_Faxes": "Faxes",
+      "ah_tripstable_Feedback": "Feedback",
+      "ah_tripstable_Letters": "Letters",
+      "ah_tripstable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ah_tripstable_PhoneCalls": "Phone Calls",
+      "ah_tripstable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ah_tripstable_ProcessSession": "Process Sessions",
+      "ah_tripstable_QueueItems": "Queue Items",
+      "ah_tripstable_RecurringAppointmentMasters": "Recurring Appointments",
+      "ah_tripstable_SharePointDocumentLocations": "Document Locations",
+      "ah_tripstable_SyncErrors": "Sync Errors",
+      "ah_tripstable_Tasks": "Tasks",
+      "ah_tripstable_Teams": "Teams",
+      "ah_tripstableid": "Trips Table",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "emailaddress": "Email Address",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Trips Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Trips Tables (Views)",
+    "Name": "_ah_tripstable_views",
+    "RelatedEntityName": "Trips Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "065b4eef-b133-4db6-8d10-b867022128a0": "Trips Table Associated View",
+      "521bd59f-899b-4416-a06e-1f1571da888d": "Inactive Trips Tables",
+      "8833c24d-751a-4631-92d9-10c5c34480fa": "Active Trips Tables",
+      "d4a1e4cc-cfcc-4190-bc6f-8aba1be28f08": "Trips Table Lookup View",
+      "f52e413b-6b18-4938-b18c-22a0814176eb": "Trips Table Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Trips Tables)",
+    "Name": "ah_tripstable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Trips Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Trips Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Trips Tables)",
+    "Name": "ah_tripstable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Trips Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Trips Tables",
+    "Type": "OptionSetInfo"
+  }
+]
