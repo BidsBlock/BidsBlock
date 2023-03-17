@@ -2,6 +2,105 @@ scr_Home As screen:
     Fill: =RGBA(237, 237, 237, 1)
     OnVisible: =Set(var_Menu, false)
 
+    ctn_MainHome As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height-Self.Y
+        Width: =Parent.Width
+        X: =ctn_HeaderHome.X
+        Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
+        ZIndex: =1
+
+    ctn_Menu As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height-Self.Y
+        Visible: =var_Menu
+        Width: =Parent.Width
+        X: =ctn_HeaderHome.X
+        Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
+        ZIndex: =2
+
+        shp_ExitMenu As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.5)
+            Height: =Parent.Height
+            OnSelect: =Set(var_Menu, false)
+            Width: =Parent.Width
+            ZIndex: =1
+
+        ctn_MenuMain As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            Width: =Parent.Width-ctn_HeaderHome.Height*2
+            ZIndex: =2
+
+            ctn_Driver As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.2
+                Width: =Parent.Width
+                ZIndex: =1
+
+                img_DriverIcon As image:
+                    Height: =(Parent.Height-Self.X*2)/3
+                    Image: =ico_driver
+                    PaddingLeft: =Self.Width/3
+                    PaddingTop: =Self.Width/3
+                    Width: =Self.Height
+                    X: =16
+                    Y: =16
+                    ZIndex: =1
+
+                lbl_DriverFullname As label:
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.'Lato Black'
+                    Height: =img_DriverIcon.Height
+                    PaddingBottom: =0
+                    PaddingLeft: =img_DriverIcon.PaddingLeft
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =20
+                    Text: =User().FullName
+                    VerticalAlign: =VerticalAlign.Bottom
+                    Width: =Parent.Width-Self.X-img_DriverIcon.X
+                    X: =img_DriverIcon.X+img_DriverIcon.Width
+                    Y: =img_DriverIcon.Y
+                    ZIndex: =2
+
+                lbl_DriverEmail As label:
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =img_DriverIcon.Height
+                    PaddingBottom: =0
+                    PaddingLeft: =img_DriverIcon.PaddingLeft
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =14
+                    Text: =User().Email
+                    Width: =Parent.Width-Self.X-img_DriverIcon.X
+                    X: =lbl_DriverFullname.X
+                    Y: =lbl_DriverFullname.Y+lbl_DriverFullname.Height
+                    ZIndex: =3
+
+                lbl_DriverType As label:
+                    Color: =RGBA(51, 51, 51, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =img_DriverIcon.Height
+                    PaddingBottom: =0
+                    PaddingLeft: =img_DriverIcon.PaddingLeft
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =14
+                    Text: ="Driver"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.Width-Self.X-img_DriverIcon.X
+                    X: =lbl_DriverEmail.X
+                    Y: =lbl_DriverEmail.Y+lbl_DriverEmail.Height
+                    ZIndex: =4
+
+            ctn_MenuItems As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height-Self.Y
+                Width: =Parent.Width
+                X: =ctn_Driver.X
+                Y: =ctn_Driver.Y+ctn_Driver.Height
+                ZIndex: =2
+
     ctn_HeaderHomeShadow As ShadowBox:
         Height: =ctn_HeaderHome.Height+32
         Shadow: |-
@@ -9,12 +108,13 @@ scr_Home As screen:
         Width: =ctn_HeaderHome.Width+32
         X: =ctn_HeaderHome.X-16
         Y: =ctn_HeaderHome.Y-16
+        ZIndex: =3
 
     ctn_HeaderHome As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =80
         Width: =Parent.Width
-        ZIndex: =2
+        ZIndex: =4
 
         lbl_AppName_1 As label:
             Color: =RGBA(51, 51, 51, 1)
@@ -51,7 +151,7 @@ scr_Home As screen:
             FocusedBorderThickness: =0
             Height: =Parent.Height
             HoverFill: =RGBA(0, 0, 0, 0.05)
-            Icon: =Icon.Hamburger
+            Icon: =If(var_Menu, Icon.Cancel, Icon.Hamburger)
             OnSelect: =Set(var_Menu, !var_Menu)
             PaddingBottom: =Self.PaddingTop
             PaddingLeft: =Self.PaddingTop
@@ -75,18 +175,4 @@ scr_Home As screen:
             X: =img_AppIcon.X+img_AppIcon.Width
             Y: =img_AppIcon.Y
             ZIndex: =4
-
-    ctn_MainHome As groupContainer.manualLayoutContainer:
-        Height: =Parent.Height-Self.Y
-        Width: =Parent.Width
-        X: =ctn_HeaderHome.X
-        Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
-        ZIndex: =3
-
-    ctn_Menu As groupContainer.manualLayoutContainer:
-        Height: =Parent.Height-Self.Y
-        Width: =Parent.Width
-        X: =ctn_HeaderHome.X
-        Y: =ctn_HeaderHome.Y+ctn_HeaderHome.Height
-        ZIndex: =4
 
