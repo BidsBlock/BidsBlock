@@ -45,7 +45,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctn_Header",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -221,7 +221,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "ctn_HeaderShadow",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -15,14 +15,24 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/17/2023 14:55:59",
+  "HeaderLastSavedDateTimeUTC": "03/17/2023 15:06:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "71e52f11-32f6-4e6f-b6ed-2cff9b68975f": "\"/providers/microsoft.powerapps/apis/shared_sha256-5fb0047c48a5c6b48d-5f566eb36883bca6d9/connections/c4e240bdb1834e65b1acf9c02d484ab3\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "ico_accounting": "170757fd-7628-410a-9139-9e40f88f09e8.png",
+    "ico_driver": "a6635aa1-845f-4361-88e8-c22362f13376.png",
+    "ico_expense": "ac1fb059-55ad-4e27-9257-42b8faa1c85a.png",
+    "ico_trip": "bea06f91-73ee-4e7f-bddf-5fc38d8af350.png"
+  },
+  "LocalResourceRootPaths": {
+    "ico_accounting": "https://docserverpwaprodneu.blob.core.windows.net/262b943b-4d03-4ed9-9b38-ea9009b6f65f-1/resource/6ddaab3d-4bf2-4d94-a661-8ae727e1064f.png?sv=2018-03-28&sr=b&sig=7lvM6F6j%2B4Hw9HniYkNI2d7hAKhJHaBHtlgaWZboOLE%3D&spr=https&se=2023-03-18T15%3A21%3A55Z&sp=r",
+    "ico_driver": "https://docserverpwaprodneu.blob.core.windows.net/262b943b-4d03-4ed9-9b38-ea9009b6f65f-1/resource/0afd7042-6245-47d7-88bb-89dfd064d7e9.png?sv=2018-03-28&sr=b&sig=P%2ByAnkIDes5OdXCXNUd2V6BTd34TFlw%2BfqHsmUsRYcY%3D&spr=https&se=2023-03-18T15%3A21%3A53Z&sp=r",
+    "ico_expense": "https://docserverpwaprodneu.blob.core.windows.net/262b943b-4d03-4ed9-9b38-ea9009b6f65f-1/resource/643b3b3e-7a0b-4bb4-a111-f7fffaedb75a.png?sv=2018-03-28&sr=b&sig=Szlee2Lo08A44tqv7ZGZJ5cbcv90EKlEbciJgo9GhAQ%3D&spr=https&se=2023-03-18T15%3A21%3A54Z&sp=r",
+    "ico_trip": "https://docserverpwaprodneu.blob.core.windows.net/262b943b-4d03-4ed9-9b38-ea9009b6f65f-1/resource/b3ee376b-76a0-4e87-96f6-55b0a6dbd9f2.png?sv=2018-03-28&sr=b&sig=cgWtVJ0gu0JGGTcWWgC6QsrPBaA1FVGGDT0R5n4Px%2F0%3D&spr=https&se=2023-03-18T15%3A21%3A54Z&sp=r"
+  },
   "OldLogoFileName": "jekcjwlu.jpg",
   "OrderComponentMetadata": {
     "f5d17746d15640748205ea66a1093331": 0
@@ -54,8 +64,8 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "groupContainer": 0,
-    "image": 1
+    "groupContainer": 1,
+    "image": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
@@ -69,14 +79,18 @@
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "ctn_Header": 0,
-    "ctn_HeaderShadow": 1,
+    "ctn_Header": 1,
+    "ctn_HeaderShadow": 0,
     "ctn_Main": 2,
     "imgShadowBox_SB": 3,
     "scr_Login": 0,
     "ShadowBox": 0
   },
   "ResourcesJsonIndices": {
+    "Image-ico_accounting": 4,
+    "Image-ico_driver": 1,
+    "Image-ico_expense": 3,
+    "Image-ico_trip": 2,
     "Image-SampleImage": 0
   },
   "RuleScreenIdWithoutScreen": {},
