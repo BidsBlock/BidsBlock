@@ -198,11 +198,14 @@ scr_Home As screen:
                 img_DriverCardHover As image:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
+                    BorderThickness: =1
                     Height: =Parent.Height-Self.Y*2
+                    HoverBorderColor: =RGBA(149, 149, 149, 1)
                     HoverFill: =RGBA(0, 0, 0, 0.05)
                     Image: =
                     PaddingLeft: =Self.Width/3
                     PaddingTop: =Self.Width/3
+                    PressedBorderColor: =RGBA(149, 149, 149, 1)
                     PressedFill: =RGBA(0, 0, 0, 0.08)
                     RadiusBottomLeft: =Self.X
                     RadiusBottomRight: =Self.X
