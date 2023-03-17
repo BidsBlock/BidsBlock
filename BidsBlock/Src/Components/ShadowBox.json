@@ -101,7 +101,7 @@
         "Name": "imgShadowBox_SB",
         "Parent": "ShadowBox",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 21,
+        "PublishOrderIndex": 23,
         "Rules": [
           {
             "Category": "Data",

@@ -121,6 +121,25 @@ scr_Home As screen:
                     Y: =lbl_DriverEmail.Y+lbl_DriverEmail.Height
                     ZIndex: =6
 
+                img_DriverCardHover As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height-Self.Y*2
+                    HoverFill: =RGBA(0, 0, 0, 0.05)
+                    Image: =
+                    PaddingLeft: =Self.Width/3
+                    PaddingTop: =Self.Width/3
+                    PressedFill: =RGBA(0, 0, 0, 1)
+                    RadiusBottomLeft: =Self.X
+                    RadiusBottomRight: =Self.X
+                    RadiusTopLeft: =Self.X
+                    RadiusTopRight: =Self.X
+                    Width: =Parent.Width-Self.X*2
+                    X: =img_DriverIcon.X
+                    Y: =img_DriverIcon.Y
+                    ZIndex: =7
+
             ctn_MenuItems As groupContainer.manualLayoutContainer:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height-Self.Y
