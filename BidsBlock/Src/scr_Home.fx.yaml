@@ -1,5 +1,6 @@
 scr_Home As screen:
     Fill: =RGBA(237, 237, 237, 1)
+    OnVisible: =Set(var_Menu, false)
 
     ctn_HeaderShadow_1 As ShadowBox:
         Height: =ctn_Header_1.Height+32
@@ -35,6 +36,7 @@ scr_Home As screen:
             Height: =Parent.Height
             HoverFill: =RGBA(0, 0, 0, 0.05)
             Icon: =Icon.Hamburger
+            OnSelect: =Set(var_Menu, !var_Menu)
             PaddingBottom: =Self.PaddingTop
             PaddingLeft: =Self.PaddingTop
             PaddingRight: =Self.PaddingTop
